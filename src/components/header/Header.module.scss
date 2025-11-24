@@ -9,8 +9,10 @@ header {
     background-color: #FFFFFF;
     z-index: 1000;
 
-    @media (max-width: 375px) {
-        justify-content: space-around;
+    @media (max-width: 412px) {
+        justify-content: space-between;
+        padding: 0 1rem;
+
     }
 
     div {
@@ -35,7 +37,7 @@ header {
         border: red 1px solid;
         justify-content: end;
 
-        @media (max-width: 375px) {
+        @media (max-width: 412px) {
             display: none;
             width: 5%;
         }
@@ -60,7 +62,7 @@ header {
 
         border: red 1px solid;
 
-        @media (max-width: 375px) {
+        @media (max-width: 412px) {
             display: flex;
         }
 

@@ -15,7 +15,7 @@ const dataBase = []
 
 export default function Footer() {
     return (
-        <footer className={styles.footer} >
+        <footer >
 
             <nav className={styles.navAtendimento} >
 
