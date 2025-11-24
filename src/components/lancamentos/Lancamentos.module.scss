@@ -1,0 +1,151 @@
+.sectionLancamentos {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    @media (max-width: 768px) {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h2Lancamentos {
+
+        font-size: 2.5rem;
+
+        @media (max-width: 768px) {
+            margin: 2rem 0;
+        }
+    }
+
+    .sectionInformacoes {
+        width: 100%;
+        min-height: 60vh;
+        display: flex;
+        justify-content: space-evenly;
+
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .figureBatom {
+            height: auto;
+            width: 9%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .figureBoca {
+            width: 30%;
+
+            @media (max-width: 768px) {
+                margin: 2rem 0;
+            }
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .divInformacoes {
+            width: 30%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            box-shadow: -5px 5px 10px #0000003d;
+
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            .figureEstrelas {
+                width: 90%;
+
+                img {
+                    width: 50%;
+                    height: 100%;
+                }
+            }
+
+            .h3Matte {
+                width: 90%;
+                font-size: 2rem;
+            }
+
+            .pCores {
+                font-size: 1rem;
+
+                @media (max-width: 768px) {
+                    width: auto;
+                }
+            }
+
+            .divButtons {
+                width: 90%;
+                display: flex;
+                gap: 10px;
+
+                @media (max-width: 768px) {
+                    width: auto;
+                }
+
+                button {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                .vinho {
+                    background-color: #b1b0d8;
+                }
+
+                .vermelho {
+                    background-color: #e1342a;
+                }
+
+                .marrom {
+                    background-color: #73282d;
+                }
+
+                .rosa {
+                    background-color: #de755e;
+                }
+
+            }
+
+            .h3Descricao {
+                width: 90%;
+                font-size: 2rem;
+
+            }
+
+            p {
+                width: 90%;
+                height: 100%;
+                font-size: 1.2rem;
+                text-align: justify;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
