@@ -9,7 +9,7 @@ header {
     background-color: #FFFFFF;
     z-index: 1000;
 
-    @media (max-width: 768px) {
+    @media (max-width: 780px) {
         justify-content: space-around;
     }
 
@@ -35,7 +35,7 @@ header {
         border: red 1px solid;
         justify-content: end;
 
-        @media (max-width: 768px) {
+        @media (max-width: 780px) {
             display: none;
             width: 5%;
         }
@@ -60,7 +60,7 @@ header {
 
         border: red 1px solid;
 
-        @media (max-width: 768px) {
+        @media (max-width: 780px) {
             display: flex;
         }
 
