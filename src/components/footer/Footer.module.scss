@@ -7,9 +7,8 @@ footer {
     gap: 1rem;
     padding-left: 5%;
     box-shadow: 0 -1px 5px #0000008e;
-    border: red 1px solid;
 
-    /* MOBILE */
+
     @media (max-width: 412px) {
         flex-direction: column;
         height: auto;
@@ -17,16 +16,13 @@ footer {
         gap: 2rem;
     }
 
-    /* ================================
-       BLOCO: ATENDIMENTO
-    =================================*/
+
     .navAtendimento {
         height: 80%;
         width: 20%;
         display: flex;
         flex-direction: column;
         gap: 15px;
-        border: red 1px solid;
 
         @media (max-width: 412px) {
             width: 90%;
@@ -49,16 +45,13 @@ footer {
         }
     }
 
-    /* ================================
-       BLOCO: PAGAMENTOS
-    =================================*/
+
     .divPagamentos {
         height: 80%;
         width: 20%;
         display: flex;
         flex-direction: column;
         gap: 15px;
-        border: red 1px solid;
 
         @media (max-width: 412px) {
             width: 90%;
@@ -69,34 +62,27 @@ footer {
             font-size: 1.5rem;
         }
 
-        /* grade dos ícones */
-        .iconsPagamentos {
-            width: 100%;
+
+        div {
+            width: 80%;
             height: 30%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             align-items: center;
             gap: .5rem;
 
             img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
                 object-position: center;
             }
         }
     }
 
-    /* ================================
-       BLOCO: REDES SOCIAIS
-    =================================*/
     .navSociais {
         height: 80%;
         width: 20%;
         display: flex;
         flex-direction: column;
         gap: 15px;
-        border: red 1px solid;
 
         @media (max-width: 412px) {
             width: 90%;
@@ -110,16 +96,15 @@ footer {
         ul {
             display: flex;
             align-items: center;
-            gap: 1rem;
 
             li {
                 height: 100%;
-                aspect-ratio: 1 / 1; /* mantém ícones quadrados */
+                width: 100%;
 
                 a {
                     display: block;
-                    width: 100%;
-                    height: 100%;
+                    width: 70%;
+                    // height: 100%;
 
                     img {
                         width: 100%;
