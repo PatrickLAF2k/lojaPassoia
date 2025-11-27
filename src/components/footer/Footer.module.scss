@@ -5,21 +5,35 @@ footer {
     display: flex;
     align-items: center;
     gap: 1rem;
-    box-shadow: 0 -1px 5px #0000008e;
     padding-left: 5%;
-    background-color: aquamarine;
+    box-shadow: 0 -1px 5px #0000008e;
+    border: red 1px solid;
 
+    /* MOBILE */
+    @media (max-width: 412px) {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    /* ================================
+       BLOCO: ATENDIMENTO
+    =================================*/
     .navAtendimento {
         height: 80%;
         width: 20%;
-
         display: flex;
         flex-direction: column;
         gap: 15px;
+        border: red 1px solid;
 
+        @media (max-width: 412px) {
+            width: 90%;
+            height: auto;
+        }
 
         h2 {
-
             font-size: 1.5rem;
         }
 
@@ -28,77 +42,93 @@ footer {
             flex-direction: column;
             gap: 10px;
 
-            li {
-
-                a {
-                    font-size: 1rem;
-                    color: #2D2D2D;
-                }
+            a {
+                font-size: 1rem;
+                color: #2D2D2D;
             }
         }
     }
 
+    /* ================================
+       BLOCO: PAGAMENTOS
+    =================================*/
     .divPagamentos {
         height: 80%;
         width: 20%;
         display: flex;
         flex-direction: column;
         gap: 15px;
+        border: red 1px solid;
 
-
+        @media (max-width: 412px) {
+            width: 90%;
+            height: auto;
+        }
 
         h2 {
             font-size: 1.5rem;
-
         }
 
-        div {
-            height: 30%;
+        /* grade dos ícones */
+        .iconsPagamentos {
             width: 100%;
-            justify-content: space-evenly;
+            height: 30%;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            align-items: center
-        }
+            align-items: center;
+            gap: .5rem;
 
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
     }
 
+    /* ================================
+       BLOCO: REDES SOCIAIS
+    =================================*/
     .navSociais {
         height: 80%;
         width: 20%;
         display: flex;
-        grid-template-columns: repeat(3, 1fr);
-        // align-items: center;
         flex-direction: column;
         gap: 15px;
+        border: red 1px solid;
 
+        @media (max-width: 412px) {
+            width: 90%;
+            height: auto;
+        }
 
         h2 {
             font-size: 1.5rem;
         }
 
         ul {
-            width: 100%;
-            height: 20%;
             display: flex;
-            gap: 1rem;
             align-items: center;
+            gap: 1rem;
 
             li {
                 height: 100%;
+                aspect-ratio: 1 / 1; /* mantém ícones quadrados */
 
                 a {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+
                     img {
-                        height: 100%;
                         width: 100%;
+                        height: 100%;
                         object-fit: cover;
+                        object-position: center;
                     }
                 }
-
-
             }
-
-
         }
     }
 }

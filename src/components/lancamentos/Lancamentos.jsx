@@ -10,10 +10,16 @@ import bocaMarrom from "../../assets/bocaMarrom.png"
 import bocaRosa from "../../assets/bocaRosa.png"
 import bocaVinho from "../../assets/bocaVinho.png"
 import estrelas from "../../assets/estrelas.png"
-
 import styles from "./Lancamentos.module.scss"
 
+import { useEffect, useState } from "react"
+
 export default function Lancamentos() {
+
+    const [bocaAtual, setBocaAtual] = useState(bocaRosa)
+
+
+
     return (
         <section id="lancamentos" className={styles.sectionLancamentos} >
 
@@ -28,7 +34,7 @@ export default function Lancamentos() {
                 </figure>
 
                 <figure className={styles.figureBoca} >
-                    <img src={bocaRosa} alt="" />
+                    <img src={bocaAtual} alt="" />
                 </figure>
 
                 <div className={styles.divInformacoes} >
@@ -41,10 +47,10 @@ export default function Lancamentos() {
                     <p className={styles.pCores} >Cores disponíveis</p>
 
                     <div className={styles.divButtons} >
-                        <button className={styles.vinho} ></button>
-                        <button className={styles.vermelho} ></button>
-                        <button className={styles.marrom} ></button>
-                        <button className={styles.rosa} ></button>
+                        <button className={styles.vinho} onClick={() => setBocaAtual(bocaVinho)} ></button>
+                        <button className={styles.vermelho} onClick={() => setBocaAtual(bocaVermelha)} ></button>
+                        <button className={styles.marrom} onClick={() => setBocaAtual(bocaMarrom)} ></button>
+                        <button className={styles.rosa} onClick={() => setBocaAtual(bocaRosa)} ></button>
                     </div>
 
                     <h3 className={styles.h3Descricao} >Descrição</h3>

@@ -17,7 +17,6 @@ header {
 
     div {
         height: 75%;
-        border: red 1px solid;
 
         a {
             img {
@@ -34,7 +33,6 @@ header {
         align-items: center;
         gap: 5rem;
         padding-right: 5rem;
-        border: red 1px solid;
         justify-content: end;
 
         @media (max-width: 412px) {
@@ -60,7 +58,6 @@ header {
         gap: 6px;
         cursor: pointer;
 
-        border: red 1px solid;
 
         @media (max-width: 412px) {
             display: flex;
